@@ -167,7 +167,7 @@ sudo -i и установляю средства разработки:
 Подмонтирую диск mount /dev/sr0 /media
 
 <figure>
-![12](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/main/labs/lab01/report/image/12.png)
+![12](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/report/image/12.png)
 <figcaption><p>Рис. 16: Подмонтирование диска</p></figcaption>
 </figure>
 
