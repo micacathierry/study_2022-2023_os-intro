@@ -39,7 +39,7 @@
 редактирую файл LabWork2 с помощью gedit:
 
 <figure>
-![1](image/1.png)
+![1](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab03/report/image/1.png)
 <figcaption><p>Рис. 2: Копирование файла</p></figcaption>
 </figure>
 
