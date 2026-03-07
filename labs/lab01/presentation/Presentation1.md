@@ -61,7 +61,7 @@
 Запускаю VirtualBox:
 
 
-![1](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/1.png?raw=true)
+![1](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/1.png?raw=true)
 Рис. 1: VirtualBox
 
 
@@ -69,7 +69,7 @@
 дисков и выбираю образ:
 
 
-![2](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/2.png?raw=true)
+![2](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/2.png?raw=true)
 Рис. 2: имя машины
 
 
@@ -77,7 +77,7 @@
 процессора:
 
 
-![3](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/3.png?raw=true)
+![3](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/3.png?raw=true)
 Рис. 3: размер основной памяти
 
 
@@ -88,7 +88,7 @@
 Задаю машину видеопамять 128МБ и запускаю её:
 
 
-![4](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/4.png?raw=true)
+![4](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/4.png?raw=true)
 Рис. 5: видеопамять
 
 
@@ -105,7 +105,7 @@
 системы:
 
 
-![5](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/5.png?raw=true)
+![5](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/5.png?raw=true)
 Рис. 7: Язык интерфейса
 
 
@@ -117,28 +117,28 @@
 Переключаюсь на роль супер-пользователя и обновляю все пакеты:
 
 
-![6](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/6.png?raw=true)
+![6](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/6.png?raw=true)
 Рис. 10: Обновление
 
 
 Установливаю программы для удобства работы в консоли:
 
 
-![7](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/7.png?raw=true)
+![7](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/7.png?raw=true)
 Рис. 11: tmux mx
 
 
 Установливаю программного обеспечения для автоматического обновления:
 
 
-![8](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/8.png?raw=true)
+![8](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/8.png?raw=true)
 Рис. 12: автоматическое обновление
 
 
 Запускаю таймер:
 
 
-![9](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/9.png?raw=true)
+![9](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/9.png?raw=true)
 Рис. 13: Запуск таймера
 
 
@@ -148,7 +148,7 @@ SELINUX=enforcing на значение SELINUX=permissive. Перегрузаю
 машину:
 
 
-![10](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/10.png?raw=true)
+![10](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/10.png?raw=true)
 Рис. 14: Замена enforcing на permissive
 
 
@@ -158,7 +158,7 @@ SELINUX=enforcing на значение SELINUX=permissive. Перегрузаю
 sudo -i и установляю средства разработки:
 
 
-![11](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/11.png?raw=true)
+![11](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/11.png?raw=true)
 Рис. 15: Установке средства разработки
 
 
@@ -167,7 +167,7 @@ sudo -i и установляю средства разработки:
 Подмонтирую диск mount /dev/sr0 /media
 
 
-![12](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/12.png?raw=true)
+![12](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/12.png?raw=true)
 Рис. 16: Подмонтирование диска
 
 
@@ -184,7 +184,7 @@ sudo -i и установляю средства разработки:
 машину:
 
 
-![13](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/13.png?raw=true)
+![13](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/13.png?raw=true)
 Рис. 17: отредактирование конфигурационного
 файла
 
@@ -198,14 +198,14 @@ username указиваю мой логин в дисплейном классе
 пользователя:
 
 
-![14](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/14.png?raw=true)
+![14](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/14.png?raw=true)
 Рис. 20: Создание пользователья
 
 
 Проверяю, что имя хоста установлено верно:
 
 
-![15](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/15.png?raw=true)
+![15](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/15.png?raw=true)
 Рис. 21: Проверка
 
 
@@ -216,7 +216,7 @@ username указиваю мой логин в дисплейном классе
 супер-пользователя:
 
 
-![16](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/16.png?raw=true)
+![16](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/16.png?raw=true)
 Рис. 22: Переключение на роль
 супер-пользователя
 
@@ -224,14 +224,14 @@ username указиваю мой логин в дисплейном классе
 Установливаю pandoc с помощью менеджера пакетов:
 
 
-![17](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/17.png?raw=true)
+![17](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/17.png?raw=true)
 Рис. 23: Установка pandoc
 
 
 Установливаю TexLive с помощью менеджера пакетов:
 
 
-![18](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/18.png?raw=true)
+![18](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/18.png?raw=true)
 Рис. 24: Установка TexLive
 
 
@@ -247,12 +247,12 @@ username указиваю мой логин в дисплейном классе
 выполнив команду dmesg:
 
 
-![19](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/19.png?raw=true)
+![19](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/19.png?raw=true)
 Рис. 25: Команда
 
 
 
-![20](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/20.png?raw=true)
+![20](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/20.png?raw=true)
 Рис. 26: последовательность загрузки
 системы
 
@@ -261,41 +261,41 @@ username указиваю мой логин в дисплейном классе
 Linux (Linux version).
 
 
-![21](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/21.png?raw=true)
+![21](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/21.png?raw=true)
 Рис. 27: Linux version
 
 
 - Частота процессора (Detected Mhz processor):
 
 
-![22](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/22.png?raw=true)
+![22](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/22.png?raw=true)
 Рис. 28: Processor
 
 
 - Модель процессора (CPU0):
 
 
-![23](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/23.png?raw=true)
+![23](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/23.png?raw=true)
 Рис. 29: CPU
 
 
 - Объём доступной оперативной памяти (Memory available):
 
 
-![24](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/24.png?raw=true)
+![24](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/24.png?raw=true)
 Рис. 30: Memory
 
 
 - Тип обнаруженного гипервизора (Hypervisor detected):
 
 
-![25](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/25.png?raw=true)
+![25](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/25.png?raw=true)
 Рис. 31: Hypervisor
 
 
 - Последовательность монтирования файловых систем:
 
-![26](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/26.png?raw=true){width="3.5198020559930008in"
+![26](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/26.png?raw=true){width="3.5198020559930008in"
 height="1.8632534995625547in"}­
 
 Рис. 32: Mount
