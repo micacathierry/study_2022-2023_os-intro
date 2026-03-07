@@ -85,7 +85,7 @@ toc-title: Содержание
 Описываются проведённые действия, в качестве иллюстрации даётся ссылка
 на иллюстрацию ([рис. 1](#fig-001){.quarto-xref}).
 
-![](image/solvay.jpg){width="70%"}
+![image/solvay.jpg](image/solvay.jpg){width="70%"}
 
 # Выводы {#выводы number="5"}
 

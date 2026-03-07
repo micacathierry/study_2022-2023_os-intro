@@ -39,7 +39,7 @@
 редактирую файл LabWork2 с помощью gedit:
 
 <figure>
-<img src="image/image1.png" style="width:4.53985in;height:3.45139in" />
+![image/image1.png](image/image1.png)
 <figcaption><p>Рис. 2: Копирование файла</p></figcaption>
 </figure>
 
