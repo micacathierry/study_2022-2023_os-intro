@@ -60,7 +60,6 @@
 
 Установливаю git используя "dnf install git":
 
-
 ![1](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab02/report/image/1.png)
 Рис. 1: Установление git
 
