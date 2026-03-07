@@ -61,10 +61,9 @@
 Запускаю VirtualBox:
 
 <figure>
-![1](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/report/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/report/https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/report/image/1.png?raw=true)
+![1](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/>
 <figcaption><p>Рис. 1: VirtualBox</p></figcaption>
 </figure>
-
 Нажимаю кнопку new, задаю имя машины и добавляю новый привод оптических
 дисков и выбираю образ:
 
