@@ -61,7 +61,7 @@
 Запускаю VirtualBox:
 
 <figure>
-<img src="media/image1.png" style="width:6.72847in;height:2.70069in" />
+<img src="image/image1.png" style="width:6.72847in;height:2.70069in" />
 <figcaption><p>Рис. 1: VirtualBox</p></figcaption>
 </figure>
 
@@ -69,7 +69,7 @@
 дисков и выбираю образ:
 
 <figure>
-<img src="media/image2.png" style="width:6.72847in;height:3.30139in" />
+<img src="image/image2.png" style="width:6.72847in;height:3.30139in" />
 <figcaption><p>Рис. 2: имя машины</p></figcaption>
 </figure>
 
@@ -77,7 +77,7 @@
 процессора:
 
 <figure>
-<img src="media/image3.png" style="width:6.72847in;height:3.29306in" />
+<img src="image/image3.png" style="width:6.72847in;height:3.29306in" />
 <figcaption><p>Рис. 3: размер основной памяти</p></figcaption>
 </figure>
 
@@ -88,7 +88,7 @@
 Задаю машину видеопамять 128МБ и запускаю её:
 
 <figure>
-<img src="media/image4.png" style="width:6.72847in;height:4.09306in" />
+<img src="image/image4.png" style="width:6.72847in;height:4.09306in" />
 <figcaption><p>Рис. 5: видеопамять</p></figcaption>
 </figure>
 
@@ -105,7 +105,7 @@
 системы:
 
 <figure>
-<img src="media/image5.png" style="width:6.72847in;height:4.09514in" />
+<img src="image/image5.png" style="width:6.72847in;height:4.09514in" />
 <figcaption><p>Рис. 7: Язык интерфейса</p></figcaption>
 </figure>
 
@@ -117,28 +117,28 @@
 Переключаюсь на роль супер-пользователя и обновляю все пакеты:
 
 <figure>
-<img src="media/image6.png" style="width:4.77083in;height:1.49344in" />
+<img src="image/image6.png" style="width:4.77083in;height:1.49344in" />
 <figcaption><p>Рис. 10: Обновление</p></figcaption>
 </figure>
 
 Установливаю программы для удобства работы в консоли:
 
 <figure>
-<img src="media/image7.png" style="width:4.0463in;height:1.31466in" />
+<img src="image/image7.png" style="width:4.0463in;height:1.31466in" />
 <figcaption><p>Рис. 11: tmux mx</p></figcaption>
 </figure>
 
 Установливаю программного обеспечения для автоматического обновления:
 
 <figure>
-<img src="media/image8.png" style="width:5.81482in;height:1.02685in" />
+<img src="image/image8.png" style="width:5.81482in;height:1.02685in" />
 <figcaption><p>Рис. 12: автоматическое обновление</p></figcaption>
 </figure>
 
 Запускаю таймер:
 
 <figure>
-<img src="media/image9.png" style="width:5.46823in;height:0.54011in" />
+<img src="image/image9.png" style="width:5.46823in;height:0.54011in" />
 <figcaption><p>Рис. 13: Запуск таймера</p></figcaption>
 </figure>
 
@@ -148,7 +148,7 @@ SELINUX=enforcing на значение SELINUX=permissive. Перегрузаю
 машину:
 
 <figure>
-<img src="media/image10.png" style="width:4.99606in;height:2.66845in" />
+<img src="image/image10.png" style="width:4.99606in;height:2.66845in" />
 <figcaption><p>Рис. 14: Замена enforcing на permissive</p></figcaption>
 </figure>
 
@@ -158,7 +158,7 @@ SELINUX=enforcing на значение SELINUX=permissive. Перегрузаю
 sudo -i и установляю средства разработки:
 
 <figure>
-<img src="media/image11.png" style="width:3.31016in;height:1.28126in" />
+<img src="image/image11.png" style="width:3.31016in;height:1.28126in" />
 <figcaption><p>Рис. 15: Установке средства разработки</p></figcaption>
 </figure>
 
@@ -167,11 +167,11 @@ sudo -i и установляю средства разработки:
 Подмонтирую диск mount /dev/sr0 /media
 
 <figure>
-<img src="media/image12.png" style="width:6.56639in;height:1.09722in" />
+<img src="image/image12.png" style="width:6.56639in;height:1.09722in" />
 <figcaption><p>Рис. 16: Подмонтирование диска</p></figcaption>
 </figure>
 
-Далее установливаю драйвера указав /media/VBoxLinuxAdditions.run и
+Далее установливаю драйвера указав /image/VBoxLinuxAdditions.run и
 перегружаю виртуальную машину.
 
 ## 3.4 Настройка раскладки клавиатуры
@@ -184,7 +184,7 @@ sudo -i и установляю средства разработки:
 машину:
 
 <figure>
-<img src="media/image13.png" style="width:5.40278in;height:1.44459in" />
+<img src="image/image13.png" style="width:5.40278in;height:1.44459in" />
 <figcaption><p>Рис. 17: отредактирование конфигурационного
 файла</p></figcaption>
 </figure>
@@ -198,14 +198,14 @@ username указиваю мой логин в дисплейном классе
 пользователя:
 
 <figure>
-<img src="media/image14.png" style="width:5.81944in;height:0.8685in" />
+<img src="image/image14.png" style="width:5.81944in;height:0.8685in" />
 <figcaption><p>Рис. 20: Создание пользователья</p></figcaption>
 </figure>
 
 Проверяю, что имя хоста установлено верно:
 
 <figure>
-<img src="media/image15.png" style="width:5.95784in;height:3.83333in" />
+<img src="image/image15.png" style="width:5.95784in;height:3.83333in" />
 <figcaption><p>Рис. 21: Проверка</p></figcaption>
 </figure>
 
@@ -216,7 +216,7 @@ username указиваю мой логин в дисплейном классе
 супер-пользователя:
 
 <figure>
-<img src="media/image16.png" style="width:5.50199in;height:4in" />
+<img src="image/image16.png" style="width:5.50199in;height:4in" />
 <figcaption><p>Рис. 22: Переключение на роль
 супер-пользователя</p></figcaption>
 </figure>
@@ -224,14 +224,14 @@ username указиваю мой логин в дисплейном классе
 Установливаю pandoc с помощью менеджера пакетов:
 
 <figure>
-<img src="media/image17.png" style="width:5.01324in;height:2.07639in" />
+<img src="image/image17.png" style="width:5.01324in;height:2.07639in" />
 <figcaption><p>Рис. 23: Установка pandoc</p></figcaption>
 </figure>
 
 Установливаю TexLive с помощью менеджера пакетов:
 
 <figure>
-<img src="media/image18.png" style="width:5.64583in;height:0.92126in" />
+<img src="image/image18.png" style="width:5.64583in;height:0.92126in" />
 <figcaption><p>Рис. 24: Установка TexLive</p></figcaption>
 </figure>
 
@@ -247,12 +247,12 @@ username указиваю мой логин в дисплейном классе
 выполнив команду dmesg:
 
 <figure>
-<img src="media/image19.png" style="width:4.3125in;height:0.7349in" />
+<img src="image/image19.png" style="width:4.3125in;height:0.7349in" />
 <figcaption><p>Рис. 25: Команда</p></figcaption>
 </figure>
 
 <figure>
-<img src="media/image20.png" style="width:4.76733in;height:2.38194in" />
+<img src="image/image20.png" style="width:4.76733in;height:2.38194in" />
 <figcaption><p>Рис. 26: последовательность загрузки
 системы</p></figcaption>
 </figure>
@@ -261,41 +261,41 @@ username указиваю мой логин в дисплейном классе
 Linux (Linux version).
 
 <figure>
-<img src="media/image21.png" style="width:4.53465in;height:0.97348in" />
+<img src="image/image21.png" style="width:4.53465in;height:0.97348in" />
 <figcaption><p>Рис. 27: Linux version</p></figcaption>
 </figure>
 
 - Частота процессора (Detected Mhz processor):
 
 <figure>
-<img src="media/image22.png" style="width:3.94059in;height:0.89232in" />
+<img src="image/image22.png" style="width:3.94059in;height:0.89232in" />
 <figcaption><p>Рис. 28: Processor</p></figcaption>
 </figure>
 
 - Модель процессора (CPU0):
 
 <figure>
-<img src="media/image23.png" style="width:4.26208in;height:0.62376in" />
+<img src="image/image23.png" style="width:4.26208in;height:0.62376in" />
 <figcaption><p>Рис. 29: CPU</p></figcaption>
 </figure>
 
 - Объём доступной оперативной памяти (Memory available):
 
 <figure>
-<img src="media/image24.png" style="width:4.71287in;height:2.77256in" />
+<img src="image/image24.png" style="width:4.71287in;height:2.77256in" />
 <figcaption><p>Рис. 30: Memory</p></figcaption>
 </figure>
 
 - Тип обнаруженного гипервизора (Hypervisor detected):
 
 <figure>
-<img src="media/image25.png" style="width:4.55418in;height:0.84654in" />
+<img src="image/image25.png" style="width:4.55418in;height:0.84654in" />
 <figcaption><p>Рис. 31: Hypervisor</p></figcaption>
 </figure>
 
 - Последовательность монтирования файловых систем:
 
-![](media/image26.png){width="3.5198020559930008in"
+![](image/image26.png){width="3.5198020559930008in"
 height="1.8632534995625547in"}­
 
 Рис. 32: Mount

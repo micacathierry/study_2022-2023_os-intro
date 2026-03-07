@@ -39,7 +39,7 @@
 редактирую файл LabWork2 с помощью gedit:
 
 <figure>
-<img src="media/image1.png" style="width:4.53985in;height:3.45139in" />
+<img src="image/image1.png" style="width:4.53985in;height:3.45139in" />
 <figcaption><p>Рис. 2: Копирование файла</p></figcaption>
 </figure>
 
@@ -49,7 +49,7 @@
 создаю LabWork2.docx и LabWork2.pdf:
 
 <figure>
-<img src="media/image2.png" style="width:3.91597in;height:0.4958in"
+<img src="image/image2.png" style="width:3.91597in;height:0.4958in"
 alt="Создание LabWork2.docx и LabWork2.pdf" />
 <figcaption><p>Рис. 4: Создание LabWork2.docx и
 LabWork2.pdf</p></figcaption>
