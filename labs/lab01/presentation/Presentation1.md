@@ -61,7 +61,7 @@
 Запускаю VirtualBox:
 
 <figure>
-![1](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/1_new.png?raw=true)
+![1](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/1.png?raw=true)
 <figcaption><p>Рис. 1: VirtualBox</p></figcaption>
 </figure>
 
@@ -158,7 +158,7 @@ SELINUX=enforcing на значение SELINUX=permissive. Перегрузаю
 sudo -i и установляю средства разработки:
 
 <figure>
-![11](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/11_new.png?raw=true)
+![11](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/11.png?raw=true)
 <figcaption><p>Рис. 15: Установке средства разработки</p></figcaption>
 </figure>
 
@@ -261,7 +261,7 @@ username указиваю мой логин в дисплейном классе
 Linux (Linux version).
 
 <figure>
-![21](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/21_new.png?raw=true)
+![21](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab01/presentation/image/21.png?raw=true)
 <figcaption><p>Рис. 27: Linux version</p></figcaption>
 </figure>
 
