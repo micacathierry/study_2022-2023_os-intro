@@ -1,0 +1,332 @@
+**РОССИЙСКИЙ УНИВЕРСИТЕТ ДРУЖБЫ НАРОДОВ**
+
+**Факультет физико-математических и естественных наук**
+
+**Кафедра прикладной информатики и теории вероятностей**
+
+Отчёт по лабораторной работе №2
+
+**Архитектура Компьютеров и Операционные Системы**
+
+Студент: ТУЙИШИМЕ Тьерри
+
+Группа: НКАбд-05-25
+
+# Содержание {#содержание .TOC-Heading}
+
+[1 Цель работы [2](#section)](#section)
+
+[2 Задание [3](#задание)](#задание)
+
+[3 Выполнение лабораторной работы
+[3](#выполнение-лабораторной-работы)](#выполнение-лабораторной-работы)
+
+[3.1 Создание базовой конфигурации для работы с git.
+[3](#создание-базовой-конфигурации-для-работы-с-git.)](#создание-базовой-конфигурации-для-работы-с-git.)
+
+[3.2 Создание ключ ssh [4](#создание-ключ-ssh)](#создание-ключ-ssh)
+
+[3.3 Создание ключ gpg [4](#создание-ключ-gpg)](#создание-ключ-gpg)
+
+[3.4 Создание локального каталога для выполнения заданий.
+[8](#создание-локального-каталога-для-выполнения-заданий.)](#создание-локального-каталога-для-выполнения-заданий.)
+
+[4 Выводы [9](#выводы)](#выводы)
+
+[5 Ответы на контрольные вопросы
+[9](#ответы-на-контрольные-вопросы)](#ответы-на-контрольные-вопросы)
+
+[6 Список литературы [11](#список-литературы)](#список-литературы)
+
+# 
+
+# 1 Цель работы
+
+Изучение идеалогии, применение средств контроля версий и освоение умения
+по работе с git.
+
+# 2 Задание
+
+1.  Создать базовую конфигурацию для работы с git.
+2.  Создать ключ SSH.
+3.  Создать ключ PGP.
+4.  Настроить подписи git.
+5.  Зарегистрироваться на Github.
+6.  Создать локальный каталог для выполнения заданий по предмету.
+
+# 3 Выполнение лабораторной работы
+
+## 3.1 Создание базовой конфигурации для работы с git.
+
+Установливаю git используя "dnf install git":
+
+<figure>
+![1](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab02/report/image/1.png?raw=true)
+<figcaption><p>Рис. 1: Установление git</p></figcaption>
+</figure>
+
+С помощью dnf install gh, установливаю gh:
+
+<figure>
+![2](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab02/report/image/2.png?raw=true)
+<figcaption><p>Рис. 2: Установление gh</p></figcaption>
+</figure>
+
+В качестве имя и email владельца репозитории задаю свои имя и email и
+настраиваю utf-8:
+
+<figure>
+![3](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab02/report/image/3.png?raw=true)
+<figcaption><p>Рис. 3: имя и email владельца</p></figcaption>
+</figure>
+
+Задаю имя начальной ветки и паррамеры autocrlf и safecrlf:
+
+<figure>
+![4](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab02/report/image/4.png?raw=true)
+<figcaption><p>Рис. 4: имя начальной ветки и паррамеры</p></figcaption>
+</figure>
+
+## 3.2 Создание ключ ssh
+
+Создаю ключи ssh по алгоритму rsa с размером 4096 бит:
+
+<figure>
+![5](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab02/report/image/5.png?raw=true)
+<figcaption><p>Рис. 5: Создание ключ ssh</p></figcaption>
+</figure>
+
+## 3.3 Создание ключ gpg
+
+Генерирую ключ gpg --full-generate-key:
+
+<figure>
+![6](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab02/report/image/6.png?raw=true)
+<figcaption><p>Рис. 6: Создание ключ gpg</p></figcaption>
+</figure>
+
+Из предложенных опций выбираю тип RSA and RSA; размер 4096; срок
+действия 0:
+
+<figure>
+![7](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab02/report/image/7.png?raw=true)
+<figcaption><p>Рис. 7: Настройки ключ gpg</p></figcaption>
+</figure>
+
+GPG запросил личную информацию, которая сохранится в ключе Имя и адрес
+электронной почты:
+
+<figure>
+![8](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab02/report/image/8.png?raw=true)
+<figcaption><p>Рис. 8: личная информация</p></figcaption>
+</figure>
+
+У меня уже есть аккаунт на github, поэтому я вхожу в систему:
+
+<figure>
+![9](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab02/report/image/9.png?raw=true)
+<figcaption><p>Рис. 9: аккаунт на git</p></figcaption>
+</figure>
+
+Вывожу список ключей:
+
+<figure>
+![10](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab02/report/image/10.png?raw=true)
+<figcaption><p>Рис. 10: список ключей</p></figcaption>
+</figure>
+
+Установливаю xclip:
+
+<figure>
+![11](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab02/report/image/11.png?raw=true)
+<figcaption><p>Рис. 11: Установление xclip</p></figcaption>
+</figure>
+
+Cкопирую сгенерированный gpg ключ в буфер обмена:
+
+<figure>
+![12](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab02/report/image/12.png?raw=true)
+<figcaption><p>Рис. 12: Копирование ключ gpg</p></figcaption>
+</figure>
+
+Далее перехожу в настройки GitHub, нажимаю на кнопку New GPG key и
+вставляю полученный ключ:
+
+<figure>
+![13](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab02/report/image/13.png?raw=true)
+<figcaption><p>Рис. 13: Добавлен ключ gpg</p></figcaption>
+</figure>
+
+Используя введёный email, указиваю Git применять его при подписи
+коммитов:
+
+<figure>
+![14](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab02/report/image/14.png?raw=true)
+<figcaption><p>Рис. 14: указиваю Git</p></figcaption>
+</figure>
+
+Начинаю авторизацию в gh используя gh auth login:
+
+<figure>
+![15](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab02/report/image/15.png?raw=true)
+<figcaption><p>Рис. 15: авторизацию в gh</p></figcaption>
+</figure>
+
+Завершаю авторизацию на броузер:
+
+<figure>
+<img src="image/image16.png" style="width:4.08333in;height:2.83951in"
+alt="Авторизоваться через броузер." />
+<figcaption><p>Рис. 16: Авторизоваться через броузер.</p></figcaption>
+</figure>
+
+<figure>
+![17](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab02/report/image/17.png?raw=true)
+<figcaption><p>Рис. 17: Завершена авторизация</p></figcaption>
+</figure>
+
+## 3.4 Создание локального каталога для выполнения заданий.
+
+Создаю каталог "mkdir -p \~/work/study/2022-2023/"Операционные системы":
+
+<figure>
+![18](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab02/report/image/18.png?raw=true)
+<figcaption><p>Рис. 18: Создание каталог</p></figcaption>
+</figure>
+
+Перехожу в созданный каталог:
+
+<figure>
+![19](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab02/report/image/19.png?raw=true)
+<figcaption><p>Рис. 19: Создание каталог</p></figcaption>
+</figure>
+
+Удаляю лишные файлы:
+
+<figure>
+![20](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab02/report/image/20.png?raw=true)
+<figcaption><p>Рис. 20: Удаление файла</p></figcaption>
+</figure>
+
+Создаю еще необходимые каталоги:
+
+<figure>
+![21](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab02/report/image/21.png?raw=true)
+<figcaption><p>Рис. 21: Создани необходимых каталогов</p></figcaption>
+</figure>
+
+Отправляю Файлы на сервер:
+
+<figure>
+![22](https://raw.githubusercontent.com/micacathierry/study_2022-2023_os-intro/master/labs/lab02/report/image/22.png?raw=true)
+<figcaption><p>Рис. 22: Отправление файлы на сервер</p></figcaption>
+</figure>
+
+# 4 Выводы
+
+При выполнении лабораторной работы я изучила идеалогию, применение
+средств контроля версий и освоеила умение по работе с git.
+
+# 5 Ответы на контрольные вопросы
+
+1.  Системы Контроля Версий - Программные инструменты, помагающие
+    командам разработчиков управлять изменениями в исходном коде с
+    течением времени.
+
+2.  Хранилище - в нем храняются все документы, включая историю их
+    изменение и прочей служебной информацией.
+
+- commit - отслеживание измененийб сохраняет разницу в изменениях.
+
+  история - Хранит все изменения в проекте и позволяет при необходимости
+  обратиться к нужным данным.
+
+  рабочая копия- копия проекта основанная на версии из хранилища.
+
+3.  В ценрализованном VCS например AccuRev, каждый пользователь копирует
+    себе необходимые ему файлы из репзитория, изменяет их а затем
+    добавляет измениения обратно в хранилище. В децентрализованном VCS
+    например Git, есть возможность добавлять и забирать изменения из
+    любого репозитория.
+
+4.  Сначала создается и подключается удаленный репозиторий, затем по
+    мере изменения проекта эти изменения отправляются на сервер.
+
+5.  Участник проекта перед началом работы получает нужную ему версию
+    проекта в хранилище, с помощью определенных команд, после внесения
+    изменений пользователь размещает новую версию в хранилище. При этом
+    предыдущие версии не удаляются. К ним можно вернуться в любой
+    момент.
+
+6.  Хранение информации о всех изменениях в вашем коде, обеспечение
+    удобства командной работы над кодом.
+
+Создание основного дерева репозитория: git init
+
+7.  Получение обновлений (изменений) текущего дерева из центрального
+    репозитория: git pull
+
+- Отправка всех произведённых изменений локального дерева в центральный
+  репозиторий: git push
+
+  Просмотр списка изменённых файлов в текущей директории: git status
+
+  Просмотр текущих изменений: git diff
+
+  Сохранение текущих изменений: добавить все изменённые и/или созданные
+  файлы и/или каталоги: git add .
+
+  добавить конкретные изменённые и/или созданные файлы и/или каталоги:
+  git add имена_файлов
+
+  удалить файл и/или каталог из индекса репозитория (при этом файл и/или
+  каталог остаётся в локальной директории): git rm имена_файлов
+
+  Сохранение добавленных изменений:
+
+  сохранить все добавленные изменения и все изменённые файлы: git commit
+  -am 'Описание коммита'
+
+  сохранить добавленные изменения с внесением комментария через
+  встроенный редактор: git commit
+
+  создание новой ветки, базирующейся на текущей: git checkout -b
+  имя_ветки
+
+  переключение на некоторую ветку: git checkout имя_ветки (при
+  переключении на ветку, которой ещё нет в локальном репозитории, она
+  будет создана и связана с удалённой)
+
+  отправка изменений конкретной ветки в центральный репозиторий: git
+  push origin имя_ветки
+
+  слияние ветки с текущим деревом: git merge --no-ff имя_ветки
+
+  Удаление ветки:
+
+  удаление локальной уже слитой с основным деревом ветки: git branch -d
+  имя_ветки
+
+  принудительное удаление локальной ветки: git branch -D имя_ветки
+
+  удаление ветки с центрального репозитория: git push origin :имя_ветки
+
+8.  git push -all отправляем из локального репозитория все сохраненные
+    изменения в центральный репозиторий, предварительно создав локальный
+    репозиторий и сделав предварительную конфигурацию.
+
+9.  Ветвление - один из параллельных участков в одном хранилище,
+    исходящих из одной версии, обычно есть главная ветка. Между ветками,
+    т. е. их концами возможно их слияние. Используются для разработки
+    новых функций.
+
+10. Во время работы над проектом могут создаваться файлы, которые не
+    следуют добавлять в репозиторий. Например, временные файлы. Можно
+    прописать шаблоны игнорируемых при добавлении в репозиторий типов
+    файлов в файл .gitignore с помощью сервисов.
+
+# 6 Список литературы
+
+::: [Архитектура
+ЭВМ](https://esystem.rudn.ru/mod/page/view.php?id=1098790#org2c71102)
+:::
