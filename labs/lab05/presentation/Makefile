@@ -1,8 +1,12 @@
-all:
-	-@quarto render
+all: presentation5.html presentation5.pdf
+
+presentation5.html: presentation5.md
+	pandoc $< -o $@
+
+presentation5.pdf: presentation5.md
+	pandoc $< -t beamer -o $@
 
 clean:
-	-rm -rf _output
+	rm -f presentation5.html presentation5.pdf
 
-cleanall: clean
-	-rm -rf .quarto
+.PHONY: all clean
