@@ -1,21 +1,13 @@
 ---
-## Author
-author:
-  name: Дмитрий Сергеевич Кулябов
-  degrees: DSc
-  orcid: 0000-0002-0877-7063
-  email: kulyabov-ds@rudn.ru
-  affiliation:
-    - name: Российский университет дружбы народов
-      country: Российская Федерация
-      postal-code: 117198
-      city: Москва
-      address: ул. Миклухо-Маклая, д. 6
-
-## Title
-title: "Шаблон отчёта по лабораторной работе"
-subtitle: "Простейший вариант"
-license: "CC BY"
+title: "Лабораторная работа №5"
+author: "Туйишиме Тьерри"
+email: "1132255025@rudn.ru"
+institute: "Российский университет дружбы народов"
+date: "2026-03-14"
+format:
+  docx: default
+  pdf: default
+  markdown: default
 ---
 
 # Цель работы
