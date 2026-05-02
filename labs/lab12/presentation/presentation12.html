@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>presentation12</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
+  <style>
+    .reveal .sourceCode {  /* see #7635 */
+      overflow: visible;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/simple.css" id="theme">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section class="slide level1">
+
+<p>Студент: ТУЙИШИМЕ Тьерри</p>
+<p>Группа: НКАбд-05-25</p>
+</section>
+<section id="содержание" class="slide level1 TOC-Heading">
+<h1 class="TOC-Heading">Содержание</h1>
+<p><a href="#/_Toc228553074">1 Цель работы [1](#_Toc228553074)</a></p>
+<p><a href="#/задание">2 Задание [1](#задание)</a></p>
+<p><a href="#/выполнение-лабораторной-работы">3 Выполнение лабораторной
+работы [1](#выполнение-лабораторной-работы)</a></p>
+<p><a href="#/выводы">4 Выводы [5](#выводы)</a></p>
+<p><a href="#/ответы-на-контрольные-вопросы">5 Ответы на контрольные
+вопросы [5](#ответы-на-контрольные-вопросы)</a></p>
+<p><a href="#/список-литературы">Список литературы
+[10](#список-литературы)</a></p>
+<p><span id="_Toc228553074" class="anchor"></span></p>
+</section>
+<section id="цель-работы" class="slide level1">
+<h1>1 Цель работы</h1>
+<p>Научиться писать небольшие командные файлы.</p>
+</section>
+<section id="задание" class="slide level1">
+<h1>2 Задание</h1>
+<ol type="1">
+<li>Написать скрипт, который при запуске будет делать резервную копию
+самого себя в другую директорию</li>
+<li>Написать пример командного файла, обрабатывающего любое произвольное
+число аргументов командной строки</li>
+<li>Написать командный файл — аналог команды ls</li>
+<li>Написать командный файл, который получает в качестве аргумента
+командной строки формат файла и вычисляет количество таких файлов в
+указанной директории.</li>
+</ol>
+</section>
+<section id="выполнение-лабораторной-работы" class="slide level1">
+<h1>3 Выполнение лабораторной работы</h1>
+<p>Я создала файл project.sh. В этом файле я написала скрипт ,который
+при запуске будет делать резервную копию самого себя (то есть файла, в
+котором содержится его исходный код) в другую директорию backup в
+домашнем каталоге. Затем я создала исполняемый файл и запускала его:</p>
+<p><img data-src="image/1.png" alt="1" /> Рис. 1: Создание
+project.sh</p>
+<pre><code>tar -cvf ~/backup/project.tar project.sh</code></pre>
+<p><img data-src="image/2.png" alt="2" /> Рис. 2: Скрипт</p>
+<p><img data-src="image/3.png" alt="3" /> Рис. 3: Создание исполняемого
+файла</p>
+<p><img data-src="image/4.png" alt="4" /> Рис. 4: Запуск файла</p>
+<p>Я проверила с помощью cat,что копия содержит скрипт из оригинала:</p>
+<p><img data-src="image/5.png" alt="5" /> Рис. 5: Проверка копии
+файла</p>
+<p>Создала другой файл project1.sh. Написала код, обрабатывающий любое
+произвольное число аргументов командной строки. Сделала его исполняемый
+и запускала его:</p>
+<p><img data-src="image/6.png" alt="6" /> Рис. 6: Создание
+project1.sh</p>
+<p><img data-src="image/7.png" alt="7" /> Рис. 7: Код project1.sh</p>
+<pre><code>for A in $*
+    do echo $A
+done</code></pre>
+<p><img data-src="image/8.png" alt="8" /> Рис. 8: Запуск project1.sh</p>
+<p>Создала файл project2.sh и в нем написала программу - аналог команды
+ls. Она выводит информацию о возможностях доступа к файлам этого
+каталога и информацию о нужном каталоге:</p>
+<p><img data-src="image/9.png" alt="9" /> Рис. 9: Создание
+project2.sh</p>
+<pre><code>for A in *
+do
+    if test -d &quot;$A&quot;
+    then 
+        echo &quot;$A^ is a directory&quot;
+    else
+        echo &quot;$A: is a file and&quot;
+        if test -w $A
+        then
+            echo &quot; is writable&quot;
+                if test -r $A
+                then 
+                    echo &quot;is readable&quot;
+            else
+                echo &quot;Neither raedable nor writable&quot;
+                fi
+            fi
+        fi
+done    </code></pre>
+<p><img data-src="image/10.png" alt="10" /> Рис. 10: Программа
+project2.sh</p>
+<p><img data-src="image/11.png" alt="11" /> Рис. 11: Запуск
+программы</p>
+<p>Создала файл project3.sh и в нем написала код, который олучает в
+качестве аргумента командной строки формат файла (.txt, .doc, .jpg, .pdf
+и т.д.) и вычисляет количество таких файлов в указанной директории.</p>
+<p><img data-src="image/12.png" alt="12" /> Рис. 12: Код project3.sh</p>
+<pre><code>echo &quot;Enter file format: &quot;
+read format
+echo &quot;Enter directory: &quot;
+read directory 
+find &quot;${directory}&quot; -name &quot;.${format}&quot; -type f | wc -l</code></pre>
+<p>Рис. 13: Запуск project3.sh</p>
+</section>
+<section id="выводы" class="slide level1">
+<h1>4 Выводы</h1>
+<p>При выполнении данной работы я научилась писать небольшие командные
+файлы.</p>
+</section>
+<section id="ответы-на-контрольные-вопросы" class="slide level1">
+<h1>5 Ответы на контрольные вопросы</h1>
+<ol type="1">
+<li><p>Командные процессоры или оболочки - это программы, позволяющие
+пользователю взаимодействовать с компьютером. Их можно рассматривать как
+настоящие интерпретируемые языки, которые воспринимают команды
+пользователя и обрабатывают их. Поэтому командные процессоры также
+называют интерпретаторами команд. На языках оболочек можно писать
+программы и выполнять их подобно любым другим программам. UNIX обладает
+большим количеством оболочек. Наиболее популярными являются следующие
+четыре оболочки: –оболочка Борна (Bourne) - первоначальная командная
+оболочка UNIX: базовый, но полный набор функций; –С-оболочка - добавка
+университета Беркли к коллекции оболочек: она надстраивается над
+оболочкой Борна, используя С-подобный синтаксис команд, и сохраняет
+историю выполненных команд; –оболочка Корна - напоминает оболочку С, но
+операторы управления программой совместимы с операторами оболочки Борна;
+–BASH - сокращение от Bourne Again Shell (опять оболочка Борна), в
+основе своей совмещает свойства оболочек С и Корна (разработка компании
+Free Software Foundation).</p></li>
+<li><p>POSIX (Portable Operating System Interface for Computer
+Environments)- интерфейс переносимой операционной системы для
+компьютерных сред. Представляет собой набор стандартов, подготовленных
+институтом инженеров по электронике и радиотехники (IEEE), который
+определяет различные аспекты построения операционной системы. POSIX
+включает такие темы, как программный интерфейс, безопасность, работа с
+сетями и графический интерфейс. POSIX-совместимые оболочки являются
+будущим поколением оболочек UNIX и других ОС. Windows NT рекламируется
+как система, удовлетворяющая POSIX-стандартам. POSIX-совместимые
+оболочки разработаны на базе оболочки Корна; фонд бесплатного
+программного обеспечения (Free Software Foundation) работает над тем,
+чтобы и оболочку BASH сделать POSIX-совместимой.</p></li>
+<li><p>Kомандный процессор bash обеспечивает возможность использования
+переменных типа строка символов. Имена переменных могут быть выбраны
+пользователем. Пользователь имеет возможность присвоить переменной
+значение некоторой строки символов. Например, команда mark=/usr/andy/bin
+присваивает значение строки символов /usr/andy/bin переменной mark типа
+строка символов. Значение, присвоенное некоторой переменной, может быть
+впоследствии использовано. Для этого в соответствующем месте командной
+строки должно быть употреблено имя этой переменной, которому
+предшествует метасимвол Напримеркоманда {имя переменной} например,
+использование команд b=/tmp/andy-ls -l myfile &gt; <span
+class="math inline"><em>b</em><em>l</em><em>s</em><em>п</em><em>р</em><em>и</em><em>в</em><em>е</em><em>д</em><em>е</em><em>т</em><em>к</em><em>п</em><em>е</em><em>р</em><em>е</em><em>н</em><em>а</em><em>з</em><em>н</em><em>а</em><em>ч</em><em>е</em><em>н</em><em>и</em><em>ю</em><em>с</em><em>т</em><em>а</em><em>н</em><em>д</em><em>а</em><em>р</em><em>т</em><em>н</em><em>о</em><em>г</em><em>о</em><em>в</em><em>ы</em><em>в</em><em>о</em><em>д</em><em>а</em><em>к</em><em>о</em><em>м</em><em>а</em><em>н</em><em>д</em><em>ы</em><em>l</em><em>s</em><em>с</em><em>т</em><em>е</em><em>р</em><em>м</em><em>и</em><em>н</em><em>а</em><em>л</em><em>а</em><em>н</em><em>а</em><em>ф</em><em>а</em><em>й</em><em>л</em>/<em>t</em><em>m</em><em>p</em>/<em>a</em><em>n</em><em>d</em><em>y</em> − <em>l</em><em>s</em>, <em>а</em><em>и</em><em>с</em><em>п</em><em>о</em><em>л</em><em>ь</em><em>з</em><em>о</em><em>в</em><em>а</em><em>н</em><em>и</em><em>е</em><em>к</em><em>о</em><em>м</em><em>а</em><em>н</em><em>д</em><em>ы</em><em>l</em><em>s</em> − <em>l</em>&gt;</span>bls
+приведет к подстановке в командную строку значения переменной bls. Если
+переменной bls не было предварительно присвоено никакого значения, то ее
+значением является символ пробел. Оболочка bash позволяет создание
+массивов. Для создания массива используется команда set с флагом -A. За
+флагом следует имя переменной, а затем список значений, разделенных
+пробелом. Например,set -A states Delaware Michigan “New Jersey” Далее
+можно сделать добавление в массив, например, states[49]=Alaska.
+Индексация массивов начинается с нулевого элемента.</p></li>
+<li><p>Команда let является показателем того, что последующие аргументы
+представляют собой выражение, подлежащее вычислению. Простейшее
+выражение - это единичный терм (term), обычно целочисленный. Целые числа
+можно записывать как последовательность цифр или в любом базовом
+формате. Этот формат — radix#number, где radix (основание системы
+счисления) - любое число не более 26. Для большинства команд основания
+систем счисления это - 2 (двоичная), 8 (восьмеричная) и 16
+(шестнадцатеричная). Простейшими математическими выражениями являются
+сложение (+), вычитание (-), умножение (*), целочисленное деление (/) и
+целочисленный остаток (%). Команда let берет два операнда и присваивает
+их переменной.</p></li>
+<li><p>Оператор Синтаксис Результат ! !ехр Если ехр равно 0, возвращает
+1; иначе 0 != ехр1 !=ехр2 Если ехр1 не равно ехр2, возвращает 1; иначе 0
+% ехр1%ехр2 Возвращает остаток от деления ехр1 на ехр2 %= var=%exp
+Присваивает остаток от деления var на ехр переменной var &amp;
+ехр1&amp;ехр2 Возвращает побитовое AND выражений ехр1 и ехр2 &amp;&amp;
+ехр1&amp;&amp;ехр2 Если и ехр1 и ехр2 не равны нулю, возвращает 1; иначе
+0 &amp;= var &amp;= ехр Присваивает var побитовое AND перемен- ных var и
+выражения ехр * ехр1 * ехр2 Умножает ехр1 на ехр2 <em>= var</em> = ехр
+Умножает ехр на значение var и присваивает результат переменной var +
+ехр1 + ехр2 Складывает ехр1 и ехр2 += var += ехр Складывает ехр со
+значением var и результат присваивает var - -exp Операция отрицания exp
+(называется унарный минус) - expl - exp2 Вычитает exp2 из exp1 -= var -=
+exp Вычитает exp из значения var и присваи- вает результат var / exp /
+exp2 Делит exp1 на exp2 /= var /= exp Делит var на exp и присваивает
+результат var &lt; expl &lt; exp2</p></li>
+</ol>
+<p>Если exp1 меньше, чем exp2, возвращает 1, иначе возвращает 0 « exp1«
+exp2 Сдвигает exp1 влево на exp2 бит «= var «= exp Побитовый сдвиг влево
+значения var на exp &lt;= expl &lt;= exp2 Если exp1 меньше, или равно
+exp2, возвра- щает 1; иначе возвращает 0 = var = exp Присваивает
+значение exp переменной va == exp1==exp2 Если exp1 равно exp2.
+Возвращает 1; иначе возвращает 0 &gt; exp1 &gt; exp2 1 если exp1 больше,
+чем exp2; иначе 0 &gt;= exp1 &gt;= exp2 1 если exp1 больше, или равно
+exp2; иначе 0 » exp » exp2 Сдвигает exp1 вправо на exp2 бит »= var »=exp
+Побитовый сдвиг вправо значения var на exp ^ exp1 ^ exp2 Исключающее
+OR</p>
+<p>выражений exp1 и exp2 ^= var ^= exp Присваивает var побитовое
+исключающее OR var и exp | exp1 | exp2 Побитовое OR выражений exp1 и
+exp2 |= var |= exp Присваивает var «исключающее OR» пе- ременой var и
+выражения exp || exp1 || exp2 1 если или exp1 или exp2 являются нену-
+левыми значениями; иначе 0 ~ ~exp Побитовое дополнение до exp.</p>
+<ol start="6" type="1">
+<li><p>Что означает операция (( ))? Условия оболочки bash.</p></li>
+<li><p>Имя переменной (идентификатор) — это строка символов, которая
+отличает эту переменную от других объектов программы (идентифицирует
+переменную в программе). При задании имен переменным нужно соблюдать
+следующие правила: § первым символом имени должна быть буква. Остальные
+символы — буквы и цифры (прописные и строчные буквы различаются). Можно
+использовать символ «_»; § в имени нельзя использовать символ «.»; §
+число символов в имени не должно превышать 255; § имя переменной не
+должно совпадать с зарезервированными (служебными) словами языка. Var1,
+PATH, trash, mon, day, PS1, PS2 Другие стандартные переменные: –HOME —
+имя домашнего каталога пользователя. Если команда cd вводится без
+аргументов, то происходит переход в каталог, указан- ный в этой
+переменной . –IFS — последовательность символов, являющихся
+разделителями в командной строке. Это символы пробел, табуляция и
+перевод строки(new line). –MAIL — командный процессор каждый раз перед
+выводом на экран промптера проверяет содержимое файла, имя которого
+указано в этой переменной, и если содержимое этого файла изменилось с
+момента последнего ввода из него, то перед тем как вывести на терминал
+промптер, командный процессор выводит на терминал сообщение You have
+mail (у Вас есть почта). –TERM — тип используемого терминала. –LOGNAME —
+содержит регистрационное имя пользователя, которое устанавливается
+автоматически при входе в систему. В командном процессоре Си имеется еще
+несколько стандартных переменных. Значение всех переменных можно
+просмотреть с помощью команды set.</p></li>
+<li><p>Такие символы, как ’ &lt; &gt; * ? |  ” &amp; являются
+метасимволами и имеют для командного процессора специальный
+смысл.</p></li>
+<li><p>Снятие специального смысла с метасимвола называется
+экранированием метасимвола. Экранирование может быть осуществлено с
+помощью предшествующего метасимволу символа, который, в свою очередь,
+является метасимволом. Для экранирования группы метасимволов, ее нужно
+заключить в одинарные кавычки. Строка, заключенная в двойные кавычки,
+экранирует все метасимволы, кроме $, ’ , , “. Например,–echo выведет на
+экран символ,–echo ab’|’cdвыдаст строку ab<em>|</em>cd.</p></li>
+<li><p>Последовательность команд может быть помещена в текстовый файл.
+Такой файл называется командным. Далее этот файл можно выполнить по
+команде bash командный_файл [аргументы] Чтобы не вводить каждый раз
+последовательности символов bash, необходимо изменить код защиты этого
+командного файла, обеспечив доступ к этому файлу по выполнению. Это
+может быть сделано с помощью команды chmod +x имя_файла Теперь можно
+вызывать свой командный файл на выполнение просто, вводя его имя с
+терминала так, как будто он является выполняемой программой. Командный
+процессор распознает, что в Вашем файле на самом деле хранится не
+выполняемая программа, а программа, написанная на языке программирования
+оболочки, и осуществит ее интерпретацию.</p></li>
+<li><p>Группу команд можно объединить в функцию. Для этого существует
+ключевое слово function, после которого следует имя функции и список
+команд, заключенных в фигурные скобки. Удалить функцию можно с помощью
+команды unset c флагом-f. Команда typeset имеет четыре опции для работы
+с функциями: -f — перечисляет определенные на текущий момент функции;
+—ft— при последующем вызове функции инициирует ее трассировку; —fx—
+экспортирует все перечисленные функции в любые дочерние программы
+оболочек; —</p></li>
+</ol>
+<p>fu— обозначает указанные функции как автоматически загружаемые.
+Автоматически загружаемые функции хранятся в командных файлах, а при их
+вызове оболочка просматривает переменную FPATH, отыскивая файл с
+одноименными именами функций, загружает его и вызывает эти функции.</p>
+<ol start="12" type="1">
+<li><p>ls -lrt Если есть d, то является файл каталогом</p></li>
+<li><p>Используется команда set с флагом -A. За флагом следует имя
+переменной, а затем список значений, разделенных пробелом. Например, set
+-A states Delaware Michigan “New Jersey” Далее можно сделать добавление
+в массив, например, states[49]=Alaska . Индексация массивов начинается с
+нулевого элемента. В командном процессоре Си имеется еще несколько
+стандартных переменных. Значение всех переменных можно просмотреть с
+помощью команды set. Наиболее распространенным является сокращение,
+избавляющееся от слова let в программах оболочек. Если объявить
+переменные целыми значениями, любое присвоение автоматически трактуется
+как арифметическое. Используйте typeset -i для объявления и присвоения
+переменной, и при последующем использовании она становится целой. Или
+можете использовать ключевое слово integer (псевдоним для typeset -l) и
+объявлять переменные целыми. Таким образом, выражения типа х=y+z
+воспринимаются как арифметические. Группу команд можно объединить в
+функцию. Для этого существует ключевое слово function , после которого
+следует имя функции и список команд, заключенных в фигурные скобки.
+Удалить функцию можно с помощью команды unset c флагом -f . Команда
+typeset имеет четыре опции для работы с функциями: – -f — перечисляет
+определенные на текущий момент функции; – -ft — при последующем вызове
+функции инициирует ее трассировку; – -fx — экспортирует все
+перечисленные функции в любые дочерние программы оболочек; – -fu —
+обозначает указанные функции как автоматически загружаемые.
+Автоматически загружаемые функции хранятся в командных файлах, а при их
+вызове оболочка просматривает переменную FPATH , отыскивая файл с
+одноименными именами функций, загружает его и вызывает эти функции. В
+переменные mon и day будут считаны соответствующие значения, введенные с
+клавиатуры, а переменная trash нужна для того, чтобы отобрать всю
+избыточно введенную информацию и игнорировать ее. Изъять переменную из
+программы можно с помощью команды unset.</p></li>
+<li><p>Символ $ является метасимволом командного процессора. Он
+используется, в частности, для ссылки на параметры, точнее, для
+получения их значений в командном файле. В командный файл можно передать
+до девяти параметров. При использовании где-либо в командном файле
+комбинации символов $i, где 0 &lt; 𝑖 &lt; 10, вместо нее будет
+осуществлена подстановка значения параметра с порядковым номером i, т.е.
+аргумента командного файла с порядковым номером i. Использование
+комбинации символов $0 приводит к подстановке вместо нее имени данного
+командного файла. Примере: пусть к командному файлу where имеется доступ
+по выполнению и этот командный файл содержит следующий конвейер: who |
+grep $1 Если Вы введете с терминала команду: where andy, то в случае,
+если пользователь, зарегистрированный в ОС UNIX под именем andy, в
+данный момент работает в ОС UNIX, на терминал будет выведена строка,
+содержащая номер терминала, используемого указанным пользователем. Если
+же в данный момент этот пользователь не работает в ОС UNIX, то на
+терминал не будет выведено ничего. Команда grep производит контекстный
+поиск в тексте, поступающем со стандартного ввода, для нахождения в этом
+тексте строк, содержащих последовательности символов, переданные ей в
+качестве аргументов, и выводит результаты своей работы на стандартный
+вывод. В этом примере команда grep используется как фильтр,
+обеспечивающий ввод со стандартного ввода и вывод всех строк, содержащих
+последовательность символов andy, на стандартный вывод. В ходе
+интерпретации этого файла командным процессором вместо комбинации
+символов $1 осуществляется подстановка значения первого и единственного
+параметра andy. Если предположить, что пользователь, зарегистрированный
+в ОС UNIX под именем andy, в данный момент работает в</p></li>
+</ol>
+<p>ОС UNIX, то на терминале Вы увидите примерно следующее: $ where andy
+andy ttyG Jan 14 09:12 $ Определим функцию, которая изменяет каталог и
+печатает список файлов: $ function clist { &gt; cd $1 &gt; ls &gt; }.
+Теперь при вызове команды clist каталог будет изменен каталог и выведено
+его содержимое.</p>
+<ol start="15" type="1">
+<li>$* — отображается вся командная строка или параметры оболочки;</li>
+</ol>
+<p>$? — код завершения последней выполненной команды;</p>
+<p>$$ — уникальный идентификатор процесса, в рамках которого выполняется
+командный процессор;</p>
+<p>$! — номер процесса, в рамках которого выполняется последняя
+вызванная на выполнение в командном режиме команда;</p>
+<p>$- — значение флагов командного процессора;</p>
+<p>You can’t use ‘macro parameter character #’ in math mode ${#} —
+возвращает целое число — количество слов, которые были результатом
+$;</p>
+<p>${#name} — возвращает целое значение длины строки в переменной
+name;</p>
+<p>${name[n]} — обращение к n-ному элементу массива;</p>
+<p>${name[*]} — перечисляет все элементы массива, разделенные
+пробелом;</p>
+<p>${name[@]} — то же самое, но позволяет учитывать символы пробелы в
+самих переменных;</p>
+<p>${name:-value} — если значение переменной name не определено, то оно
+будет заменено на указанное value;</p>
+<p>${name:value} — проверяется факт существования переменной;</p>
+<p>${name=value} — если name не определено, то ему присваивается
+значение value;</p>
+<p>${name?value} — останавливает выполнение, если имя переменной не
+определено, и выводит value, как сообщение об ошибке;</p>
+<p>этовыражениеработаетпротивоположно {name-value}. Если переменная
+определена, то подставляется value;</p>
+<p>${name#pattern} — представляет значение переменной name с удаленным
+самым коротким левым образцом (pattern);</p>
+<p>${#name[*]} и ${#name[@]} — эти выражения возвращают количество
+элементов в массиве name.</p>
+<p>$# вместо нее будет осуществлена подстановка числа параметров,
+указанных в командной строке при вызове данного командного файла на
+выпол</p>
+</section>
+<section id="список-литературы" class="slide level1">
+<h1>Список литературы</h1>
+<p><a
+href="https://esystem.rudn.ru/pluginfile.php/2288097/mod_resource/content/4/010-lab_shell_prog_1.pdf">Архитектура
+ЭВМ</a></p>
+</section>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
+
+  <!-- reveal.js plugins -->
+  <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // reveal.js plugins
+        plugins: [
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>
